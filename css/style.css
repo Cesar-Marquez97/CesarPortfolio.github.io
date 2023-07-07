@@ -1,0 +1,272 @@
+/*Fonts for the website*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*Select all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #121314;
+}
+
+/*----header----*/
+
+.hero-info{
+    object-fit: cover;
+    position: relative;
+    
+}
+
+.hero-video{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav-color{
+    background-color: #121314;
+}
+
+.nav-link{
+    color:#FFFFFF;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    color: #0D6EFD;
+}
+
+.h1-color{
+    color: #000000;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.lead{
+    color: #000000;
+    font-weight: bold;
+}
+
+.btn btn-primary btn-lg px-4 me-md-2{
+color:#FFFFFF;
+}
+
+/*----My work Case Study----*/
+
+.Work-setup video{
+    border-radius: 24px;
+}
+
+.Work-setup{
+    transform:
+    perspective(800px)
+    rotateY(25deg) scale(0.9)
+    rotateX(25deg);
+    filter: blur(5px);
+    opacity: 0.5;
+    transition: 0.6s ease all;
+  
+}
+
+.Work-setup:hover {
+    transform:
+    perspective(800px)
+    rotateY(0deg)
+    rotateX(0deg)
+    scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.fs-2-Ster{
+    color: #C49492;
+    font-weight: bold;
+}
+
+.fs-2-Echo{
+    color: #E08B0C;
+    font-weight: bold;
+}
+
+.fs-2-Ux{
+    color: #0D6EFD;
+    font-weight: bold;
+}
+
+p{
+    color: #FFFFFF;
+}
+
+.h2-color{
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+
+/*---- About Me ----*/
+
+.pb-2{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.fs-2{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+.text-center{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/*---- about me timeline ----*/
+
+.time-color{
+    color: #8AD8E7;
+    font-weight: bold;
+
+    
+}
+
+.time-p-color{
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.design-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.timeline-component {
+    margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-color: #8AD8E7;
+      width: 3px;
+      height: 100%;
+    }
+    .main-middle {
+      opacity: 0;
+    }
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #8AD8E7;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+}
+
+.dots-1 {
+    width: 60px;
+    aspect-ratio: 6;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: d1 1s steps(4) infinite;
+  }
+  @keyframes d1 {to{clip-path: inset(0 -34% 0 0)}}
+
+/*---- Contact Me ----*/
+
+/*---- Sterling Reeves Case Study ----*/
+.h1-color-Sterling{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.lead-Sterling{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bullet-color{
+    color: #FFFFFF;
+}
+
+h4{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.casestudytools-img{
+    max-width: 128px;
+    max-height: 128px;
+    display: block; /* remove extra space below image */
+}
+
+
+.casestudy-img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+
+/*Google UX */
+
+h5{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.app-color{
+    color: #B030B0;
+}
+
+.website-color{
+    color: #F9A826;
+}
+
+.responsive-color{
+    color: #50D890;
+}
